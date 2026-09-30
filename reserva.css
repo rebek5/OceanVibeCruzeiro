@@ -1,0 +1,288 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #eef5fb
+    );
+
+    color: #092d68;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   BOTÃO X
+========================================================= */
+
+.botao-voltar {
+    position: fixed;
+
+    top: 25px;
+    right: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #092f68;
+
+    color: white;
+
+    border: 2px solid #d7a900;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.botao-voltar:hover {
+    background-color: #d7a900;
+
+    color: white;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   PÁGINA DE RESERVA
+========================================================= */
+
+.pagina-reserva {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px 20px;
+}
+
+
+/* =========================================================
+   CAIXA DE CONFIRMAÇÃO
+========================================================= */
+
+.confirmacao-reserva {
+    width: 100%;
+
+    max-width: 750px;
+
+    background-color: #092f68;
+
+    border: 2px solid #d7a900;
+
+    border-radius: 25px;
+
+    padding: 55px 60px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 40, 90, 0.20);
+}
+
+
+/* =========================================================
+   ÍCONE DE CONFIRMAÇÃO
+========================================================= */
+
+.icone-confirmacao {
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #d7a900;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+}
+
+
+/* =========================================================
+   SUBTÍTULO
+========================================================= */
+
+.subtitulo-reserva {
+    color: #d9b43a;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.confirmacao-reserva h1 {
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   MENSAGENS
+========================================================= */
+
+.mensagem-principal {
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.mensagem-secundaria {
+    color: #e6edf6;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+
+    margin: 0 auto 15px;
+}
+
+
+.mensagem-final {
+    color: #e6edf6;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   LINHA DOURADA
+========================================================= */
+
+.linha-dourada {
+    width: 100px;
+
+    height: 2px;
+
+    background-color: #d7a900;
+
+    margin: 30px auto;
+}
+
+
+/* =========================================================
+   MENSAGEM FINAL
+========================================================= */
+
+.boa-viagem {
+    color: #d9b43a;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .pagina-reserva {
+        padding: 30px 20px;
+    }
+
+
+    .confirmacao-reserva {
+        padding: 40px 25px;
+    }
+
+
+    .confirmacao-reserva h1 {
+        font-size: 32px;
+    }
+
+
+    .mensagem-principal {
+        font-size: 16px;
+    }
+
+
+    .mensagem-secundaria,
+    .mensagem-final {
+        font-size: 14px;
+    }
+
+
+    .botao-voltar {
+        top: 15px;
+
+        right: 15px;
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+}

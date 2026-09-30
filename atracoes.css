@@ -1,0 +1,641 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f9fd;
+
+    color: #073b7a;
+
+}
+
+
+/* =========================================================
+   BOTÃO X
+========================================================= */
+
+.botao-fechar {
+
+    position: fixed;
+
+    top: 20px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    color: #073b7a;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+
+    text-decoration: none;
+
+    z-index: 100;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+
+    transition: 0.2s;
+
+}
+
+
+.botao-fechar:hover {
+
+    background-color: #f5c400;
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* =========================================================
+   BANNER PRINCIPAL
+========================================================= */
+
+.banner-shows {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   IMAGEM DO BANNER
+
+   TROQUE AQUI:
+
+   img/festa-cruzeiro.jpg
+
+========================================================= */
+
+.imagem-banner {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   ESCURECER A IMAGEM
+========================================================= */
+
+.filtro-banner {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 38, 82, 0.95),
+            rgba(0, 54, 110, 0.65),
+            rgba(0, 54, 110, 0.15)
+        );
+
+}
+
+
+/* =========================================================
+   TEXTO DO BANNER
+========================================================= */
+
+.texto-banner {
+
+    position: absolute;
+
+    top: 50%;
+    left: 8%;
+
+    transform: translateY(-50%);
+
+    width: 600px;
+
+    color: #ffffff;
+
+}
+
+
+.titulo-pequeno {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding-left: 25px;
+
+    border-left: 45px solid #f5c400;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.texto-banner h1 {
+
+    font-size: 62px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+}
+
+
+.texto-banner h1 strong {
+
+    display: block;
+
+    color: #f5c400;
+
+}
+
+
+.texto-banner p {
+
+    max-width: 620px;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =========================================================
+   SEÇÃO DOS ARTISTAS
+========================================================= */
+
+.secao-artistas {
+
+    padding: 60px 7% 70px;
+
+    background-color: #f5f9fd;
+
+}
+
+
+/* =========================================================
+   TÍTULO DA SEÇÃO
+========================================================= */
+
+.titulo-secao {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.titulo-secao span {
+
+    width: 55px;
+    height: 5px;
+
+    background-color: #f5c400;
+
+    border-radius: 15px;
+
+}
+
+
+.titulo-secao p {
+
+    color: #073b7a;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.secao-artistas h2 {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+    color: #073b7a;
+
+    font-size: 35px;
+
+}
+
+
+.secao-artistas h2 strong {
+
+    color: #d9a900;
+
+}
+
+
+
+/* =========================================================
+   LISTA DE ARTISTAS
+========================================================= */
+
+.lista-artistas {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 28px;
+
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* =========================================================
+   CARD DO ARTISTA
+========================================================= */
+
+.card-artista {
+
+    width: 33.333%;
+
+    max-width: 410px;
+
+    min-height: 310px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border-radius: 15px;
+
+    border: 5px solid #d8e5f2;
+
+    box-shadow:
+        0 18px 25px rgba(7, 59, 122, 0.12);
+
+    transition: 0.25s;
+
+}
+
+
+.card-artista:hover {
+
+    transform: translateY(-15px);
+
+    border-color: #f5c400;
+
+}
+
+/* =========================================================
+   ESTILO MUSICAL DO ARTISTA
+========================================================= */
+
+/* =========================================================
+   ESTILO MUSICAL DO ARTISTA
+========================================================= */
+
+.estilo-musical {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 8px 16px;
+
+    border: 3px solid #f5c400;
+
+    border-radius: 20px;
+
+    color: #f5c400;
+
+    font-size: 8px;
+
+    font-weight: 990;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* =========================================================
+   IMAGEM DO ARTISTA
+
+   É AQUI QUE VOCÊ TROCA AS IMAGENS.
+
+========================================================= */
+
+.imagem-artista {
+
+    width: 48%;
+
+    min-height: 310px;
+
+}
+
+
+.imagem-artista img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* =========================================================
+   INFORMAÇÕES DO ARTISTA
+========================================================= */
+
+.informacoes-artista {
+
+    width: 52%;
+
+    padding: 25px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #073b7a;
+
+    color: #ffffff;
+
+}
+
+
+.confirmado {
+
+    color: #f5c400;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.informacoes-artista h3 {
+
+    font-size: 24px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+
+}
+
+
+.informacoes-artista p {
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+
+    color: #ffffff;
+
+}
+
+
+.informacoes-artista i {
+
+    width: 20px;
+
+    margin-right: 7px;
+
+    color: #f5c400;
+
+}
+
+
+
+/* =========================================================
+   RODAPÉ DOS SHOWS
+========================================================= */
+
+.rodape-shows {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    padding: 15px 7%;
+
+    background-color: #073b7a;
+
+    color: #ffffff;
+
+}
+
+
+.item-rodape {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-width: 230px;
+
+}
+
+
+.item-rodape > i {
+
+    font-size: 35px;
+
+    color: #f5c400;
+
+}
+
+
+.item-rodape strong {
+
+    font-size: 17px;
+
+}
+
+
+.item-rodape p {
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    color: #dce9f5;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .lista-artistas {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .card-artista {
+
+        width: 100%;
+
+        max-width: 600px;
+
+    }
+
+
+    .rodape-shows {
+
+        flex-direction: column;
+
+        gap: 25px;
+
+        align-items: center;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .banner-shows {
+
+        height: 450px;
+
+    }
+
+
+    .texto-banner {
+
+        left: 7%;
+
+        width: 85%;
+
+    }
+
+
+    .texto-banner h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .texto-banner p {
+
+        font-size: 16px;
+
+    }
+
+
+    .card-artista {
+
+        flex-direction: column;
+
+    }
+
+
+    .imagem-artista {
+
+        width: 100%;
+
+        height: 250px;
+
+        min-height: 250px;
+
+    }
+
+
+    .informacoes-artista {
+
+        width: 100%;
+
+    }
+
+
+    .secao-artistas h2 {
+
+        font-size: 27px;
+
+    }
+
+}

@@ -1,0 +1,808 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f8fc;
+    color: #092d68;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.cabecalho {
+    width: 100%;
+    background: #faf8f8;
+    border-bottom: 2px solid #ffd900;
+}
+
+
+/* =========================================================
+   PRIMEIRA LINHA DO CABEÇALHO
+========================================================= */
+
+.cabecalho-superior {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+    gap: 25px;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-site {
+    width: 200px;
+
+    margin-left: 20px;
+
+    transform: translateY(10px);
+
+    flex-shrink: 0;
+}
+
+.logo-site img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================================
+   LOCALIZAÇÃO / CEP
+========================================================= */
+
+.localizacao-site {
+    width: 210px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translate(50px, 10px);
+
+    justify-content: center;
+
+    gap: 3px;
+
+    flex-shrink: 0;
+}
+
+
+/* Texto "Ativar localização" */
+
+.localizacao-site strong {
+    color: #060606;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+/* Linha do CEP */
+
+.cep-localizacao {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #2864e8;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Ícone de localização */
+
+.cep-localizacao i {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   CAMPO DE PESQUISA
+========================================================= */
+
+.pesquisa-site {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 10px);
+
+    width: 350px;
+    height: 35px;
+
+    border-radius: 6px;
+
+    background: #e4e4e4;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+
+    gap: 25px;
+}
+
+
+/* Ícone da pesquisa */
+
+.pesquisa-site i {
+    color: #153d92;
+    font-size: 20px;
+}
+
+
+/* Campo onde o usuário escreve */
+
+.pesquisa-site input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    color: #071b49;
+}
+
+
+/* Cor do texto "Pesquisar" */
+
+.pesquisa-site input::placeholder {
+    color: #0a0a0a;
+}
+
+
+/* =========================================================
+   BOTÃO LOGIN
+========================================================= */
+
+.botao-login {
+    position: absolute;
+
+    right: 130px;
+
+    top: 50%;
+
+    transform: translateY(-20%);
+
+    width: 150px;
+    height: 40px;
+
+    padding: 0;
+
+    border: 2px solid #ffd900;
+
+    border-radius: 19px;
+
+    background: #1a3b83;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    margin-left: 0;
+}
+
+
+/* Ícone do Login */
+
+.botao-login i {
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+========================================================= */
+
+.menu-principal {
+    position: relative;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 12px 40px 0;
+}
+
+
+.menu-principal::before {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background: #ffd900;
+}
+
+
+/* Links do menu */
+
+.menu-principal a {
+    color: #070707;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Setinhas do menu */
+
+.menu-principal a i {
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* Quando passa o mouse */
+
+.menu-principal a:hover {
+    color: #2d6fff;
+}
+
+
+/* Faz a seta girar */
+
+.menu-principal a:hover i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   PÁGINA DE PACOTES
+========================================================= */
+
+.pagina-pacotes {
+    padding: 55px 5% 40px;
+
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #eef5fb
+    );
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.titulo-pacotes {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.subtitulo-pacotes {
+    color: #c49600;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+.titulo-pacotes h1 {
+    color: #092d68;
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+
+.titulo-pacotes p:last-child {
+    color: #5b6d82;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   LISTA DE PACOTES
+========================================================= */
+
+.lista-pacotes {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    /* Faz os cards terem a mesma altura */
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD DE PACOTE
+========================================================= */
+
+.card-pacote {
+    position: relative;
+
+    background-color: #092f68;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 2px solid #d7a900;
+
+    box-shadow: 0 8px 25px rgba(0, 40, 90, 0.18);
+
+    transition: transform 0.3s ease;
+
+    /* Organiza o conteúdo verticalmente */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-pacote:hover {
+    transform: translateY(-6px);
+}
+
+
+/* =========================================================
+   PACOTE DESTAQUE
+========================================================= */
+
+.pacote-destaque {
+    border: 3px solid #d7a900;
+}
+
+
+/* =========================================================
+   ETIQUETA "MAIS ESCOLHIDA"
+========================================================= */
+
+.etiqueta-pacote {
+    position: absolute;
+
+    top: 12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 2;
+
+    background-color: #d7a900;
+
+    color: white;
+
+    padding: 9px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.etiqueta-pacote i {
+    margin-right: 7px;
+}
+
+
+/* =========================================================
+   IMAGEM DA CABINE
+========================================================= */
+
+.imagem-pacote {
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+.imagem-pacote img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO PACOTE
+========================================================= */
+
+.informacoes-pacote {
+    padding: 15px 28px 0;
+
+    color: white;
+
+    /* Faz a área ocupar o mesmo espaço nos cards */
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+/* =========================================================
+   TIPO DA CABINE
+========================================================= */
+
+.tipo-cabine {
+    display: block;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    color: #d9b43a;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   NOME DO PACOTE
+========================================================= */
+
+.informacoes-pacote h2 {
+    text-align: center;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.descricao-pacote {
+    text-align: center;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+    color: #f0f3f7;
+}
+
+
+/* =========================================================
+   TEXTO DO PACOTE
+========================================================= */
+
+.texto-pacote {
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    min-height: 50px;
+
+    color: #e6edf6;
+}
+
+
+/* =========================================================
+   CARACTERÍSTICAS
+========================================================= */
+
+.caracteristicas {
+    list-style: none;
+
+    margin-top: 10px;
+
+    padding-bottom: 10px;
+}
+
+
+.caracteristicas li {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+
+.caracteristicas i {
+    width: 25px;
+
+    color: #1ed8ed;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   PREÇO
+========================================================= */
+
+.preco-pacote {
+    background-color: #f4eee3;
+
+    color: #092d68;
+
+    margin: auto -28px 0;
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-radius: 20px 20px 0 0;
+
+    /* Mantém todos os preços alinhados */
+    flex-shrink: 0;
+}
+
+
+.preco-pacote span {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 3px;
+
+    color: #555;
+}
+
+
+.preco-pacote strong {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    margin-right: 5px;
+}
+
+
+.preco-pacote small {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+========================================================= */
+
+.beneficios-pacotes {
+    max-width: 1300px;
+
+    margin: 55px auto 0;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #d7a900;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.beneficio {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.beneficio i {
+    font-size: 28px;
+
+    color: #c49b16;
+}
+
+
+.beneficio div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.beneficio strong {
+    color: #092d68;
+
+    font-size: 14px;
+}
+
+
+.beneficio span {
+    color: #66778b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .cabecalho-superior {
+        gap: 20px;
+    }
+
+
+    .pesquisa-site {
+        width: 350px;
+    }
+
+
+    .lista-pacotes {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+
+    .beneficios-pacotes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .cabecalho-superior {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+
+    .logo-site {
+        width: auto;
+    }
+
+
+    .pesquisa-site {
+        width: 100%;
+    }
+
+
+    .menu-principal {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .titulo-pacotes h1 {
+        font-size: 32px;
+    }
+
+
+    .beneficios-pacotes {
+        grid-template-columns: 1fr;
+    }
+
+}
